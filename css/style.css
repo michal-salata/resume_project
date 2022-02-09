@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+/*vars*/
+
+:root {
+    --base: #f8f9fa;
+    --primary: #343a40;
+    --secondary: #17a2b8;
+
+}
+
+/*general*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1rem;
+}
+
+/*layout*/
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    min-height: 600px;
+    background: var(--base);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0px 10px 25px #333;
+    margin: 1.5rem;
+}
+
+
+.container .left-side {
+    background: var(--primary);
+    padding: 1.5rem;
+}
+.container .right-side {
+    background: var(--base);
+    padding: 1.5rem;
+}
+
+/*left items*/
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+    color: var(--base);
+    border-bottom: 1px solid var(--base);
+}
+.profile .img-setting {
+    position: relative;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 3px;
+    overflow: hidden;
+    border: solid 1px rgba(83, 83, 83, 0.5);
+    box-shadow: 0px 10px 25px rgb(34, 34, 34);
+}
+.profile .img-setting img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile h4 {
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+    font-weight: 600;
+}
+.profile h5 {
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+    font-weight: 300;
+    line-height: 1rem;
+}
+.profile .btn {
+    margin-top: 0.8rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 00.9rem;
+    font-weight: 600;
+    background: var(--secondary);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.profile .btn:hover {
+    background: var(--primary);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+.left-items {
+    margin-top: 1.2rem;
+    color: var(--base);
+}
+.left-items .title {
+    padding-bottom: 0.5rem;
+    padding-top: 2rem;
+}
+.left-items ul li a {
+    color: var(--base);
+    text-decoration: none;
+}
+.left-items ul li {
+    list-style: none;
+    margin-bottom: 0.2rem;
+}
+.left-items ul li .icons {
+    display: inline-block;
+    width: 1.4rem;
+    font-size: 1.2rem;
+    color: var(--secondary);    
+}
+.left-items ul li .text {
+    font-weight: 300;
+}
+.left-items ul li .dates {
+    color: var(--secondary);
+    font-weight: 400;
+}
+.languages li {
+    margin-right: 1rem;
+}
+.languages li:nth-child(2) {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.languages .percent {
+    width: 100%;
+    height: 0.4rem;
+    background: black;
+    display: block;
+    margin-top: 00.4rem;
+}
+.languages .percent div {
+    width: 100%;
+    height: 0.4rem;
+    background: var(--secondary);
+} 
+
+/*right items*/
+.right-items {
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+.right-items .title {
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    padding-top: 2rem;
+}
+.right-items .title:nth-child(1) {
+    padding-top: 0.4rem;
+}
+.right-items p.aboutme {
+    text-align: justify;
+}
+.experience {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+}
+.experience .time-line {
+    margin-top: 1px;
+}
+.experience .time-line .time-point {
+    width: 1.2rem;
+    height: 1.2rem;
+    display: block;
+    background: var(--secondary);
+    border-radius: 50%;
+}
+.experience .time-line .time-road {
+    width: 0.2rem;
+    height: 100%;
+    display: block;
+    background: var(--secondary);
+    transform: translate(0.5rem, 0);
+}
+.experience .content {
+    display: grid;
+    grid-template-columns: 10rem auto;
+    padding-left: 1rem;
+}
+.experience .content .interval {
+    color: var(--primary);
+    min-width: 10rem;
+    font-weight: 400;
+}
+.experience .content .interval h5:nth-child(1) {
+    padding-top: 0.3rem;
+}
+.experience .content .description {
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 0.1rem;
+}
+.experience .content .description h4 {
+    color: var(--secondary);
+}
+.skills {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    margin: 1rem 0;
+}
+.skills .percent {
+    width: 90%;
+    height: 0.8rem;
+    background: var(--primary);
+    margin-top: 0.35rem; 
+}
+.skills .percent div {
+    width: 90%;
+    height: 0.8rem;
+    background: var(--secondary);
+}
+
+/*skills icons*/
+span.ico {
+    font-size: 100%;
+    text-shadow: -1px -1px 0 rgb(97, 97, 97), 1px -1px 0 rgb(97, 97, 97), -1px 1px 0 rgb(97, 97, 97), 1px 1px 0 rgb(97, 97, 97);
+    padding-right: 0.5rem;
+}
+.ico.js {
+    color: yellow;
+    padding-right: 1rem;
+}
+.ico.css {
+    color: rgb(11, 148, 153);
+    padding-right: 1.3rem;
+}
+.ico.html {
+    color: coral;
+    padding-right: 1.1rem;
+}
+.ico.w {
+    color: rgb(115, 169, 214);
+    padding-right: 1.1rem;
+}
+.ico.x {
+    color: #21a366;
+    padding-right: 1.5rem;
+}
+
+/*hobby*/
+.hobby {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.hobby li {
+    list-style: none;
+    font-size: 1.2rem;
+    padding-right: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+.hobby li i {
+    padding-right: 0.5rem;
+}
+.hobby li .fas {
+    color: var(--secondary);
+    width: 2rem;
+    font-size: 1.2rem;
+}
+
+/*portfolio*/
+
+.right-items .image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.right-items .image a img {
+    max-width: 90%;
+    margin: 1rem;
+    text-align: center;
+    box-shadow: 0px 10px 25px #333;
+    border: solid 0.3px rgb(129, 129, 129, 0.5);
+}
+
+.right-items .image .link-desc {
+    height: 3.5rem;
+}
+
+
+/*responsive*/
+@media (max-width: 990px) {
+    .hobby li {
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (min-width: 820px) and (max-width: 890px) {
+    .left-items ul li h5 {
+        font-size: 0.7rem;
+    }
+    .left-items ul li h6 {
+        font-size: 0.6rem;
+    }
+    .experience .content .description p {
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 880px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .right-items .image {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .hobby li {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 630px) {
+    .experience .content .description p {
+        font-size: 0.6rem;
+    }
+    .experience .content .description {
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    }
+}
+@media (max-width: 505px) {
+    .experience .content {
+        grid-template-columns: 1fr;
+        margin: 0 2rem;
+        font-size: 1rem;
+        padding-left: 0;
+    }
+    .experience .content .interval {
+        font-size: 0.9rem;
+        padding-left: ;
+    }
+    .experience .content .description {
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+/*responsive links*/
+@media (max-width: 1590px) {
+    .right-items .image .link-desc {
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 880px) {
+    .right-items .title.portfolio {
+        margin-top: 4rem;
+    }
+    .right-items .image .link-desc {
+        height: 5rem;
+        margin: 3rem 1rem 0 1rem;
+    }
+    .right-items .image .link-desc#first {
+        height: 5rem;
+        margin: 1rem 1rem 0 1rem;
+    }
+    
+}

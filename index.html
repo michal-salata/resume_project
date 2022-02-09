@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Michal Šalata</title>
+
+    <!-- favicon source -->
+    <link rel="icon" type="image/x-icon" href="img/dev_icon.jpg">
+
+    <!-- main CSS source -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery source -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery ripple effect source -->
+    <script src="js/jquery.ripples.js"></script>
+
+    <!-- DISABLED download PDF script source 
+    <script src="js/html2pdf.bundle.min.js"></script>
+    -->
+
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- main JS source -->
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+
+    <div class="container" id="target">
+        <!-- left side -->
+        <div class="left-side" id="ripples">
+
+            <!-- profile -->
+            <div class="profile">
+                <div class="img-setting">
+                    <img src="img/me.BMP" alt="moja fotka">
+                </div>
+                <h4>Michal Šalata</h4>
+                <h5>Junior Front-end Developer</h5>
+                <form style="display: inline" action="https://www.michalsalata.sk/files/michal_salata_resume.pdf" method="get" target="_blank">
+                <button class="btn" id="cmd">Generate PDF</button>
+                </form>
+            </div>     
+
+            <!-- contact -->
+            <div class="left-items">
+                <h4 class="title">Kontaktné informácie</h4>
+                <ul>
+                    <li>
+                        <span class="icons">
+                            <i class="bx bx-map"></i>
+                        </span>
+                        <span class="text">Remote / Bratislava</span>
+                    </li>
+                    <li>
+                        <span class="icons">
+                            <i class="bx bx-envelope"></i>
+                        </span>
+                        <a href="mailto:m.salata@adpoint.sk"><span class="text">m.salata@adpoint.sk</span></a>
+                    </li>
+                    <li>
+                        <span class="icons">
+                            <i class="bx bx-phone" ></i>
+                        </span>
+                        <a  href="tel:+421944215653" ><span class="text">+421 944 215 653</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- education -->
+            <div class="left-items">
+                <h4 class="title">Vzdelanie</h4>
+                <ul>
+                    <li>
+                        <h4 class="dates">2008 - 2011</h4>
+                        <h5 class="text">Vysoká škola sv. Alžbety, Bratislava</h5>
+                        <h6 class="text"> Ústav SVaZ bl. P.P. Gojdiča, Prešov</h6>
+                        <h6 class="text">- sociálna práca - </h6>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4 class="dates">2004 - 2008</h4>
+                        <h5 class="text">Obchodná akadémia, Humenné</h5>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- languages -->
+            <div class="left-items">
+                <h4 class="title">Jazykové znalosti</h4>
+                <ul class="languages">
+                    <li>
+                        <span class="text">English</span>
+                        <div class="percent">
+                            <div style="width: 75%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="text">Deutsch</span>
+                        <div class="percent">
+                            <div style="width: 10%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+             <!-- hobby -->
+            <div class="left-items">
+            <h4 class="title">Hobby</h4>
+            <ul class="hobby">
+                <li><i class="fas fa-laptop-code"></i>IT</li>
+                <li><i class="fas fa-tools"></i>DIY</li>
+                <li><i class="fas fa-hiking"></i>Turistika</li>
+                <li><i class="fas fa-fish"></i>Rybačka</li>
+            </ul>
+        </div>
+        </div>
+
+        <!-- right side -->
+        <div class="right-side">
+
+            <!-- summary -->
+            <div class="right-items">
+                <h3 class="title">O mne</h3>
+                <p class="aboutme">
+                Som začínajúci Front-end Developer s veľkým odhodlaním napredovať vo webových technológiach. 
+                Momentálne dobre pracujem s HTML a CSS a učím sa JavaScript. Mojím cieľom je po zvládnutí PHP a SQL 
+                stať sa odborníkom na komplexné budovanie web aplikácii a môcť sa nazývať Full Stack Developer. 
+                Ako Junior teraz hľadám uplatnenie v akejkoľvek oblasti IT, kde môžem prispieť svojim 
+                analytickým prístupom a naďalej rozširovať svoje vedomosti a praktické skúsenosti.
+                </p>
+            </div>
+
+            <!-- experience -->
+            <div class="right-items">
+                <h3 class="title">Pracovné skúsenosti</h3>
+                <div class="experience">
+                    <div class="time-line">
+                        <span class="time-point"></span>
+                        <span class="time-road"></span>
+                    </div>
+                    <div class="content">
+                        <div class="interval">
+                            <h5>2020 - súčasnosť</h5>
+                            <h5>AdPoint Slovakia, s.r.o.</h5>
+                        </div>
+                        <div class="description">
+                            <h4>Freelancer</h4>
+                            <p> logistika | webdevelopment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="time-line">
+                        <span class="time-point"></span>
+                        <span class="time-road"></span>
+                    </div>
+                    <div class="content">
+                        <div class="interval">
+                            <h5>2017 - 2020</h5>
+                            <h5>AdPoint Slovakia, s.r.o.</h5>
+                        </div>
+                        <div class="description">
+                            <h4>Executive Manager</h4>
+                            <p> personálna agentúra</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="time-line">
+                        <span class="time-point"></span>
+                        <span class="time-road"></span>
+                    </div>
+                    <div class="content">
+                        <div class="interval">
+                            <h5>2016 - 2017</h5>
+                            <h5>QSR24h Slovakia, s.r.o.</h5>
+                        </div>
+                        <div class="description">
+                            <h4>HR Manager</h4>
+                            <p> manažment kvality v automotive</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- skills -->
+            <div class="right-items">
+                <h3 class="title">Profesionálne zručnosti</h3>
+                <div class="skills">
+                    <h4><span class="ico html"><></span>HTML</h4>
+                    <div class="percent">
+                        <div style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h4><span class="ico css">#</span>CSS</h4>
+                    <div class="percent">
+                        <div style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h4><span class="ico js">JS</span>JAVASCRIPT</h4>
+                    <div class="percent">
+                        <div style="width: 15%"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h4><span class="ico w">W</span>Wordpress</h4>
+                    <div class="percent">
+                        <div style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h4><span class="ico x">X</span>Excel</h4>
+                    <div class="percent">
+                        <div style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- portfolio -->
+            <div class="right-items">
+                <h3 class="title portfolio">Portfólio</h3>
+                <div class="image">
+                    <div>
+                        <P>
+                            <div class="link-desc" id="first">
+                            <h4>Personal Resume Page</h4>
+                            <h5>HTML / CSS / JAVASCRIPT - 2022</h5>
+                            <h6>projekt na ktorý som najviac hrdý ...pretože je o mne ;)</h6>
+                            </div>
+                            <a id="resumelink" href="#"><img src="img/resume.png" alt="" data-tilt data-tilt-scale="1" data-tilt-startX="20" data-tilt-startY="-20" data-tilt-reset="false"></a>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <div class="link-desc">
+                            <h4>E-shop CannaBeauty</h4>
+                            <h5>Wordpress / Custom CSS - 2021</h5>
+                            <h6>celkom pekný e-shop, ktorý sa však ďalej nerealizoval</h6>
+                            </div>
+                            <a href="https://www.cannabeauty.sk" target="_blank"><img src="img/cannabeauty.png" alt="link na e-shop cannabeauty.sk" data-tilt data-tilt-scale="1" data-tilt-startX="20" data-tilt-startY="20" data-tilt-reset="false"></a>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <div class="link-desc">
+                            <h4>Cenník služieb ADPOINT</h4>
+                            <h5>HTML / CSS - 2021</h5>
+                            <h6>...moje prvé kroky s HTML a CSS</h6>
+                            </div>
+                            <a href="https://www.adpoint.sk/cennik" target="_blank"><img src="img/adpoint-cennik.png" alt="link na cennik služieb AdPoint Slovakia s.r.o." data-tilt data-tilt-scale="1" data-tilt-startX="-20" data-tilt-startY="20" data-tilt-reset="false"></a>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <div class="link-desc">
+                            <h4>Firemná stránka ADPOINT</h4>
+                            <h5>Wordpress - 2020</h5>
+                            <h6>...moje úplné začiatky s Wordpressom</h6>
+                            </div>
+                            <a href="https://www.adpoint.sk" target="_blank"><img src="img/adpoint.png" alt="link na firemnú stránku adpoint.sk" data-tilt data-tilt-scale="1" data-tilt-startX="20" data-tilt-startY="20" data-tilt-reset="false"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+
+<!-- DISABLED  <script>
+    let target = document.getElementById("target");
+    let resumeButton = document.getElementById("cmd");
+
+    console.log(window);
+
+    var opt = {
+        margin: 1,
+        filename:   "michal_salata_resume.pdf",
+        image:  {type: "jpeg", quality: 0.98},
+        html2canvas: {scale: 4},
+        jsPDF:  {format: [640, 480], orientation: "p"},
+        innerWidth: "200px"
+    };
+
+    function generateResume(){
+        html2pdf(target, opt)
+    };
+</script> 
+-->
+
+    <!-- vanilla-tilt.js source (tilt effect)-->
+    <script src="js/vanilla-tilt.min.js"></script>
+    
+</html>
